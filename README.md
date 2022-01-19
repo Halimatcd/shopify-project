@@ -77,11 +77,11 @@ foo@bar:~$ mysql -u root -p
 enter password:
 mysql> CREATE SCHEMA customers
 ```
-* specify your databse NAME, PASSSWORD AND USERNAME on the .env file in the base folder.
+* Specify your databse NAME, PASSSWORD AND USERNAME on the .env file in the base folder.
 ```console
 foo@bar:~$ cp .env.example .env (to create .env file)
 ```
-* Generate an application key(copy and paste on the App key variable in .env file)
+* Generate an application key( App key would be automatically generated under APP_KEY variable in .env file)
 ```console
 foo@bar:~$ php artisan key:generate
 ```
