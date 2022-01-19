@@ -8,7 +8,7 @@
             @include('errors.error')
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Delete Records</h4>
+                    <h4 class="card-title">DELETED RECORDS</h4>
                 </div>
             @if($customers->count() > 0)
                 <div class="table-responsive">

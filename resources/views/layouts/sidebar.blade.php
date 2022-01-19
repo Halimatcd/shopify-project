@@ -33,17 +33,14 @@
     <div class="shadow-bottom"></div>
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-            <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">1</span></a>
+            <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">1</span></a>
                 <ul class="menu-content">
                     <li class="active"><a class="d-flex align-items-center" href="dashboard-ecommerce.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">Statistics</span></a>
                     </li>
                 </ul>
-            </li>
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Inventory Management</span><i data-feather="more-horizontal"></i>
-            </li>
-{{--            <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Kanban</span></a>--}}
-{{--            </li>--}}
-            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Entries</span></a>
+            </li> -->
+            
+            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Menu</span></a>
                 <ul class="menu-content">
                     <li><a class="d-flex align-items-center" href="/inventories"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">All inventories</span></a>
                     </li>
