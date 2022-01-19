@@ -113,7 +113,7 @@ foo@bar:~$ php artisan migrate
 
 # Navigating through the website
 >>> The side bar
-### Consists of
+### MENU BAR CONSIST OF:
         All inventories page: Loads all inventories fronm the database
         Create Inventory page: That allows for the creation of inventories
         Trash page: That allows one see deleted items and helps restore or delete them totally
@@ -123,3 +123,6 @@ foo@bar:~$ php artisan migrate
 * This page allows the creation of inventories
 >>>Trash
 * This page contains all deleted inventories. You can restore deleted item and also delete them parmanently.
+
+## View my site here: Click the link below
+[view my site](http://shopify-logistics.herokuapp.com/)
