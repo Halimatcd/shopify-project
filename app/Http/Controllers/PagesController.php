@@ -93,7 +93,7 @@ class PagesController extends Controller
             
         }
         $customers->sender_name = $request->input('sender_name');
-        $customers->Sender_no = $request->input('sender_no');
+        $customers->sender_no = $request->input('sender_no');
         $customers->reciever_name = $request->input('reciever_name');
         $customers->reciever_no = $request->input('reciever_no');
         $customers->item= $request->input('item');
