@@ -74,7 +74,7 @@ foo@bar:~$ composer install (to download all dependencies needed)
 * on a new terminal create a database on mysql (login into mysql using )
 ```console
 foo@bar:~$ mysql -u root -p 
-then enter password:
+enter password:
 mysql> CREATE SCHEMA customers
 ```
 * specify your databse NAME, PASSSWORD AND USERNAME on the .env file in the base folder.

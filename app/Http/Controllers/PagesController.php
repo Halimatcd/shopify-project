@@ -50,7 +50,7 @@ class PagesController extends Controller
         }
         
         $customers = new Customer();
-        $customers->Sender_name = $request->input('sender_name');
+        $customers->sender_name = $request->input('sender_name');
         $customers->Sender_no = $request->input('sender_no');
         $customers->reciever_name = $request->input('reciever_name');
         $customers->reciever_no = $request->input('reciever_no');
@@ -92,7 +92,7 @@ class PagesController extends Controller
                         ->withErrors($validator->errors());
             
         }
-        $customers->Sender_name = $request->input('sender_name');
+        $customers->sender_name = $request->input('sender_name');
         $customers->Sender_no = $request->input('sender_no');
         $customers->reciever_name = $request->input('reciever_name');
         $customers->reciever_no = $request->input('reciever_no');
