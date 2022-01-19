@@ -15,14 +15,16 @@ class CreateCustomersTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table->string('Sender_name');
-            $table->string('Sender_no');
+            $table->string('sender_name');
+            $table->string('sender_no');
             $table->string('reciever_name');
             $table->string('reciever_no');
             $table->string('item');
             $table->string('pick_up');
             $table->string('destination');
             $table->timestamps();
+            $table->string('deletion_comment')->nullable()->default(null);
+            $table->softDeletes();
         });
     }
     /**
