@@ -10,7 +10,7 @@
                 <div class="card-header">
                     <h4 class="card-title">Delete Records</h4>
                 </div>
-            
+            @if($customers->count() > 0)
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -34,9 +34,9 @@
                                     {{$customers->id}}
                                 </td>
                                 <td>
-                                    <span class="fw-bold">{{$customers->Sender_name}}</span>
+                                    <span class="fw-bold">{{$customers->sender_name}}</span>
                                 </td>
-                                <td>{{$customers->Sender_no}}</td>
+                                <td>{{$customers->sender_no}}</td>
                                 <td>
                                     {{$customers->reciever_name}}
                                 </td>
@@ -51,7 +51,7 @@
                                 <input type="hidden" name="_method" value="DELETE">
                                 @csrf
                                 <a href="{{route('customers.restore', ['id' => $customers->id])}}" class="btn btn-success btn-sm ms-1"> Restore </a>
-                                 <button type="submit" class="btn btn-danger">Delete User</button>
+                                 <button type="submit" class="btn btn-danger">Delete trash</button>
                             </form>
                            </div> 
                                 </td>
@@ -59,6 +59,9 @@
                         @endforeach
                         </tbody>
                     </table>
+                    @else
+                        <h1>TRASH IS EMPTY</h1>
+                    @endif
                 </div>
             </div>
         </div>

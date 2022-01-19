@@ -36,7 +36,7 @@
                         <span class="user-status">Software Engineer</span>
                     </div>
                     <span class="avatar">
-                        <img class="round" src="/app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
+                        <img class="round" src="/app-assets/images/portrait/small/avatar-s-12.jpg" alt="avatar" height="40" width="40">
                         <span class="avatar-status-online"></span>
                     </span>
                 </a>

@@ -10,6 +10,7 @@
                 <div class="card-body">
 
                 </div>
+                @if($customers->count() > 0)
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -36,8 +37,8 @@
                                 <td>
                                 {{$customer->created_at}}
                                 </td>
-                                <td><span class="fw-bold">{{$customer->Sender_name}}</span></td>
-                                <td>{{$customer->Sender_no}}</td>
+                                <td><span class="fw-bold">{{$customer->sender_name}}</span></td>
+                                <td>{{$customer->sender_no}}</td>
                                 <td>
                                 <span class="fw-bold">{{$customer->reciever_name}}</span>
                                 </td>
@@ -62,6 +63,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    @else
+                    <h1>NO INVENTORY RECORD</h1>
+                    @endif
                 </div>
             </div>
         </div>

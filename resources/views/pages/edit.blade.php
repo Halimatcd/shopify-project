@@ -7,7 +7,7 @@
             @include('errors.error')
                 <div class="card">
                     <div class="card-header justify-center"> 
-                    <h4 class="card-title">Edit {{$customers->Sender_name}}'s Information</h4>
+                    <h4 class="card-title">Edit {{$customers->sender_name}}'s Information</h4>
                     </div>
                     <div class="card-body">
                         <form class="form form-vertical" action="{{route('update', ['id' => $customers->id])}}" method="post">
@@ -16,13 +16,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-1">
-                                        <input type="text" id="first-name-vertical" class="form-control" name="sender_name" placeholder="Sender Name" value = "{{$customers->Sender_name}}"/>
+                                        <input type="text" id="first-name-vertical" class="form-control" name="sender_name" placeholder="Sender Name" value = "{{$customers->sender_name}}"/>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Sender No</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="sender_no" placeholder="Sender Number" value = "{{$customers->Sender_no}}" />
+                                        <input type="text" id="first-name-vertical" class="form-control" name="sender_no" placeholder="Sender Number" value = "{{$customers->sender_no}}" />
                                     </div>
                                 </div>
                                 <div class="col-12">

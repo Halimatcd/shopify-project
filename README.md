@@ -61,20 +61,42 @@ Enter the password you specified in the previous step
 ## Install composer
 [Installing composer on linux](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04)
 # Cloning the repository
-* open the repository and copy the code url
+* open the github repository and copy the code url
 * open code editor and locate the terminal
+* clone the repo
 ```console
 foo@bar:~$ git clone url_link
 ```
+* install all dependencies
 ```console
 foo@bar:~$ composer install (to download all dependencies needed) 
 ```
+* on a new terminal create a database on mysql (login into mysql using )
 ```console
-foo@bar:~$ cphp artisan serve
+foo@bar:~$ mysql -u root -p 
+then enter password:
+mysql> CREATE SCHEMA customers
+```
+* specify your databse NAME, PASSSWORD AND USERNAME on the .env file in the base folder.
+```console
+foo@bar:~$ cp .env.example .env (to create .env file)
+```
+* Generate an application key(copy and paste on the App key variable in .env file)
+```console
+foo@bar:~$ php artisan key:generate
+```
+
+* Run the code
+```console
+foo@bar:~$ php artisan serve
+```
+create needed tables
+```console
+foo@bar:~$ php artisan migrate
 ```
 * go the a web app and type 127.0.0.1:8000/ or follow the link on the terminal.
-* create a database
-* import the SQL file into your database
+
+
 
 # Accessing the code
 >> The app folder
@@ -91,8 +113,13 @@ foo@bar:~$ cphp artisan serve
 
 # Navigating through the website
 >>> The side bar
-### Consists of <ul>
+### Consists of
         All inventories page: Loads all inventories fronm the database
         Create Inventory page: That allows for the creation of inventories
-        Trash page: That allows one see deleted items and helps restore or delete them totally.
-</ul>
+        Trash page: That allows one see deleted items and helps restore or delete them totally
+>>> All Inventories page
+* A table that list all the information in the dadabase: scrolling left allows you to access the edit and delete botton.
+>>> Create Invetory page
+* This page allows the creation of inventories
+>>>Trash
+* This page contains all deleted inventories. You can restore deleted item and also delete them parmanently.

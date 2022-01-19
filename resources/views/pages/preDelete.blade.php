@@ -7,7 +7,7 @@
                 @include('errors.error')
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Delete {{$customers->Sender_name}}'s Information</h4>
+                        <h4 class="card-title">Delete {{$customers->sender_name}}'s Information</h4>
                         <p>Enter a detialed message as to why you want to delete this student record</p>
                     </div>
                     <div class="card-body">
